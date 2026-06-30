@@ -133,16 +133,20 @@ export function ParticleGrid({ className }: { className?: string }) {
 
       // Draw connections
       for (let i = 0; i < particles.length; i++) {
+        const pi = particles[i];
+        if (!pi) continue;
         for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
+          const pj = particles[j];
+          if (!pj) continue;
+          const dx = pi.x - pj.x;
+          const dy = pi.y - pj.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < CONNECTION_DISTANCE) {
             const opacity = (1 - dist / CONNECTION_DISTANCE) * 0.15;
             ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.moveTo(pi.x, pi.y);
+            ctx.lineTo(pj.x, pj.y);
             ctx.strokeStyle = `rgba(0, 212, 255, ${opacity})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();

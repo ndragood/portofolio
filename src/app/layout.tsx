@@ -4,6 +4,8 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { siteConfig } from "@/data/site";
+import { ScrollProgress } from "@/components/ui/scroll-progress";
+import { CursorSpotlight } from "@/components/ui/cursor-spotlight";
 
 const display = Space_Grotesk({
   subsets: ["latin"],
@@ -44,6 +46,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <body className="font-body bg-void text-ink antialiased">
+        <CursorSpotlight />
+        <ScrollProgress />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded focus:bg-primary focus:px-4 focus:py-2 focus:text-void focus:font-medium"

@@ -2,27 +2,12 @@ import type { Project } from "@/types";
 
 export const allProjects: Project[] = [
   {
-    id: "1",
-    slug: "top-up-website",
-    title: "Top Up Website",
-    description:
-      "A responsive web-based top-up platform for purchasing game credits and digital vouchers with a clean user interface and smooth checkout flow.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    status: "in-progress",
-    href: "/projects/top-up-website",
-    overview:
-      "A front-end web application that simulates a digital top-up marketplace where users can browse game titles, select voucher denominations, and proceed through a checkout flow. The site features a responsive layout, dynamic product filtering, and a cart system built entirely with vanilla JavaScript.",
-    problem:
-      "Many top-up platforms have cluttered, ad-heavy interfaces that make it difficult for users to quickly find and purchase the credits they need. The user experience is often sacrificed for monetization, leading to confusing navigation and slow page loads.",
-    solution:
-      "Designed and built a clean, mobile-first top-up interface using semantic HTML, modular CSS with custom properties for theming, and vanilla JavaScript for interactivity. Implemented features like category filtering, denomination selection, and a lightweight cart system with localStorage persistence.",
-    lessonsLearned:
-      "Strengthened my understanding of responsive design principles and CSS Grid/Flexbox layouts. Learned how to manage application state with vanilla JavaScript and localStorage without relying on frameworks. Gained experience building accessible, user-friendly e-commerce interfaces.",
-  },
-  {
     id: "2",
     slug: "catat-uang",
     title: "Catat Uang",
+    subtitle: "CROSS-PLATFORM MOBILE DEVELOPMENT | DATABASE DESIGN",
+    image: "/projects/catat-uang.png",
+    highlights: ["Real-Time Sync", "Firebase Auth", "Budget Alerts", "Analytics Dashboard"],
     description:
       "A mobile financial management app built with Flutter and Firebase for tracking income, expenses, and budgets with real-time data sync.",
     stack: ["Dart", "Flutter", "Firebase"],
@@ -40,25 +25,31 @@ export const allProjects: Project[] = [
   {
     id: "3",
     slug: "srm-mini-project",
-    title: "SRM Mini Project",
+    title: "SRM Audit System",
+    subtitle: "SECURITY RISK MANAGEMENT | AUDIT COMPLIANCE",
+    image: "/projects/srm-mini-project.png",
+    highlights: ["ISO/IEC 27001", "Asset Inventory", "Risk Scoring", "Audit Checklist"],
     description:
-      "A security risk management tool combining network analysis with a real-time monitoring dashboard for identifying and tracking potential threats.",
-    stack: ["Wireshark", "Python", "Next.js", "WebSockets"],
+      "A comprehensive Security Risk Management & Audit Checklist generator mapped to ISO/IEC 27001 compliance standards.",
+    stack: ["Next.js", "Prisma", "TypeScript", "Tailwind CSS"],
     status: "completed",
     href: "/projects/srm-mini-project",
     overview:
-      "A Security Risk Management (SRM) proof-of-concept that integrates network packet capture analysis with a real-time web dashboard. The tool captures and processes network traffic using Python, identifies potential security risks based on configurable rules, and streams findings to a Next.js dashboard via WebSockets.",
+      "An automated compliance and audit checklist generation system that allows organizations to register assets, identify vulnerabilities, auto-calculate risk scores, and generate ISO/IEC 27001 compliant audit controls.",
     problem:
-      "Security risk assessment in small-to-medium networks often lacks real-time visibility. Teams rely on periodic manual audits using separate tools for capture, analysis, and reporting — creating gaps where threats can go unnoticed between assessment cycles.",
+      "Organizations often struggle with manual compliance tracking and managing spreadsheets for risk assessments, leading to inconsistencies and missing controls during formal ISO 27001 audits.",
     solution:
-      "Built a Python backend that wraps tshark for continuous packet capture, extracts protocol statistics and anomaly indicators per time window, and pushes updates over WebSocket to a Next.js frontend. The dashboard shows real-time charts for protocol distribution, flagged connections, and risk severity levels.",
+      "Developed a centralized application using Next.js and Prisma that maps asset vulnerabilities directly to ISO/IEC 27001 controls. The system automates risk scoring based on the CIA triad and dynamically generates tailored audit checklists.",
     lessonsLearned:
-      "Working with real-time data streams taught me about backpressure handling and efficient state updates in React. Learned how to use tshark's ring buffer mode for memory-safe continuous capture. Gained practical understanding of SRM frameworks and how to translate risk metrics into actionable dashboards.",
+      "Deepened my understanding of ISO/IEC 27001 compliance frameworks and risk modeling. Gained hands-on experience designing relational database schemas with Prisma to handle complex mappings between assets, vulnerabilities, and security controls.",
   },
   {
     id: "4",
     slug: "tixcrowd",
     title: "TixCrowd",
+    subtitle: "FULL STACK WEB DEVELOPMENT | VENUE MANAGEMENT",
+    image: "/projects/tixcrowd.png",
+    highlights: ["Ticketing System", "QR Validation", "Seat Allocation", "Organizer Dashboard"],
     description:
       "A system for event ticketing and venue management with real-time seat allocation, QR-code validation, and an organizer dashboard.",
     stack: ["Go", "Next.js", "JavaScript"],
@@ -75,21 +66,24 @@ export const allProjects: Project[] = [
   },
   {
     id: "5",
-    slug: "cryptography-quantum",
-    title: "Cryptography Quantum",
+    slug: "soc-siem-system",
+    title: "SOC and SIEM System",
+    subtitle: "SECURITY OPERATIONS | LOG AGGREGATION",
+    image: "/projects/soc-siem-system.png",
+    highlights: ["eBPF Traffic Mirroring", "ML Anomaly Detection", "Real-Time Alerting", "OpenSearch Pipeline"],
     description:
-      "A research-driven project exploring post-quantum cryptographic algorithms and their implementation for securing communications against quantum computing threats.",
-    stack: ["Python", "Cryptography", "Research"],
+      "A high-performance Security Operations Center (SOC) and SIEM pipeline built for scalable threat detection and centralized log analysis.",
+    stack: ["OpenSearch", "Kafka", "Fluent Bit", "Vector", "eBPF", "Slack API"],
     status: "completed",
-    href: "/projects/cryptography-quantum",
+    href: "/projects/soc-siem-system",
     overview:
-      "An academic research project that explores the impact of quantum computing on current cryptographic standards and implements proof-of-concept demonstrations of post-quantum cryptographic algorithms including lattice-based and hash-based schemes.",
+      "A comprehensive SOC and SIEM system built to ingest, process, and analyze security events at scale. It utilizes Fluent Bit and Apache Kafka for reliable data ingestion, Vector/Logstash for enrichment, and OpenSearch for robust indexing and visualization.",
     problem:
-      "Current widely-used cryptographic algorithms like RSA and ECC are vulnerable to attacks from sufficiently powerful quantum computers using Shor's algorithm. Organizations need to understand and prepare for the transition to quantum-resistant cryptographic standards.",
+      "Modern networks generate massive volumes of log data. Traditional security monitoring setups often struggle to ingest and process this data in real time, lacking the ability to apply machine learning or handle rapid threat alerting efficiently.",
     solution:
-      "Conducted a comprehensive literature review of NIST post-quantum candidates. Implemented Python demonstrations of lattice-based encryption (CRYSTALS-Kyber) and hash-based signatures (SPHINCS+) to compare performance characteristics. Created a technical report analyzing migration strategies for existing systems.",
+      "Implemented a high-throughput data pipeline routing traffic mirrored via eBPF (Cilium Tetragon) into Apache Kafka. Data is parsed and enriched before indexing in OpenSearch 2.x. Set up OpenSearch Dashboards for visualization, leveraged the k-NN plugin for ML-based anomaly detection, and integrated Slack webhooks for instant alerting.",
     lessonsLearned:
-      "Deepened understanding of both classical and post-quantum cryptographic primitives. Learned about the computational complexity assumptions underlying lattice-based schemes. Gained experience writing technical research papers and presenting complex security concepts to non-specialist audiences.",
+      "Gained deep expertise in constructing scalable data pipelines and managing streaming architectures with Kafka. Learned how to leverage eBPF for low-overhead traffic mirroring and applied machine learning techniques directly within OpenSearch for advanced threat hunting.",
   },
 ];
 

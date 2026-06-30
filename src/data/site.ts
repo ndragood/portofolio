@@ -11,11 +11,11 @@ export const siteConfig = {
   location: "Cikarang Pusat, West Java, Indonesia",
   resumeUrl: "/resume.pdf",
   nav: [
-    { label: "Home", href: "/" },
-    { label: "About Me", href: "/about" },
-    { label: "Skills", href: "/skills" },
-    { label: "Portfolio", href: "/projects" },
-    { label: "Contact", href: "/contact" },
+    { label: "Home", href: "#hero" },
+    { label: "About Me", href: "#about" },
+    { label: "Skills", href: "#skills" },
+    { label: "Portfolio", href: "#projects" },
+    { label: "Contact", href: "#contact" },
   ],
   social: {
     github: "https://github.com/ndragood",

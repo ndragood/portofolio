@@ -28,6 +28,9 @@ export interface Project {
   problem: string;
   solution: string;
   lessonsLearned: string;
+  image?: string;
+  subtitle?: string;
+  highlights?: string[];
   github?: string;
   demo?: string;
 }

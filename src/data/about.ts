@@ -19,8 +19,8 @@ export const aboutData = {
   ],
 
   careerGoals: [
-    "My immediate goal is to secure a role in a Security Operations Center (SOC) as a Tier 1 Analyst, where I can apply my skills in log analysis, threat detection, and incident triage in a real-world environment.",
-    "Long-term, I aim to specialize in Threat Hunting and Digital Forensics, contributing to proactive defense strategies and incident response for organizations.",
+    "My immediate goal is to secure a role as an Application Security Engineer or DevSecOps Specialist, where I can leverage my full-stack development background to integrate security seamlessly into the CI/CD pipeline.",
+    "Long-term, I aim to bridge the gap between development and security teams by designing secure-by-default architectures and automated vulnerability assessment tools.",
   ],
 
   education: [
