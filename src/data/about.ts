@@ -30,7 +30,7 @@ export const aboutData = {
       degree: "Bachelor of Computer Science — Cyber Security Concentration",
       period: "2023 — Present",
       description:
-        "Focusing on network security, ethical hacking, and software development. Active in CTF competitions and security research projects.",
+        "Focusing on network security, ethical hacking, and software development.",
     },
   ] as Education[],
 
