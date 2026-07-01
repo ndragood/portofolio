@@ -13,8 +13,8 @@ const config: Config = {
         line: "#1C2433",
         // Signal colors (from brief)
         primary: {
-          DEFAULT: "#00FFB2",
-          dim: "#00B280",
+          DEFAULT: "#38BDF8",
+          dim: "#0284C7",
         },
         secondary: {
           DEFAULT: "#00D4FF",

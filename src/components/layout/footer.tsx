@@ -47,8 +47,7 @@ export function Footer() {
     <footer className="border-t border-line">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-8 sm:flex-row sm:justify-between sm:px-6 lg:px-8">
         <p className="font-mono text-xs text-ink-faint">
-          © {new Date().getFullYear()} {siteConfig.name}. Built for the field,
-          not the resume.
+          © {new Date().getFullYear()} {siteConfig.name}
         </p>
 
         <ul className="flex items-center gap-5">
