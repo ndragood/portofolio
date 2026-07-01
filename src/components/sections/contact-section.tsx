@@ -15,7 +15,7 @@ export function ContactSection() {
           id="contact-heading"
           className="mt-3 font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl"
         >
-          Let&apos;s talk security
+          Let&apos;s Connect
         </h2>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-muted">
           Open to internships, CTF teams, and security-focused collaborations.
