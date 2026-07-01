@@ -45,18 +45,18 @@ export const allProjects: Project[] = [
   },
   {
     id: "4",
-    slug: "tixcrowd",
-    title: "TixCrowd",
+    slug: "crowdflow",
+    title: "CrowdFlow",
     subtitle: "FULL STACK WEB DEVELOPMENT | VENUE MANAGEMENT",
-    image: "/projects/tixcrowd.png",
+    image: "/projects/crowdflow.png",
     highlights: ["Ticketing System", "QR Validation", "Seat Allocation", "Organizer Dashboard"],
     description:
       "A system for event ticketing and venue management with real-time seat allocation, QR-code validation, and an organizer dashboard.",
     stack: ["Go", "Next.js", "JavaScript"],
     status: "in-progress",
-    href: "/projects/tixcrowd",
+    href: "/projects/crowdflow",
     overview:
-      "TixCrowd is a full-stack event ticketing platform that enables organizers to create events, manage venues with seat maps, and sell tickets online. Attendees can browse events, purchase tickets, and receive QR-coded e-tickets for contactless check-in at the venue.",
+      "CrowdFlow is a full-stack event ticketing platform that enables organizers to create events, manage venues with seat maps, and sell tickets online. Attendees can browse events, purchase tickets, and receive QR-coded e-tickets for contactless check-in at the venue.",
     problem:
       "Small-to-medium event organizers often lack access to affordable, customizable ticketing systems. Most existing platforms charge high fees, offer limited venue management tools, and do not provide real-time occupancy tracking — making it difficult to manage crowd flow effectively.",
     solution:
