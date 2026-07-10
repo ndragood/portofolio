@@ -95,54 +95,48 @@ export function AboutSection() {
                 </div>
               </div>
             )}
+
+            {/* Education */}
+            <div className="mt-10 pt-2 border-t border-line/50">
+              <div className="flex items-center gap-3 mb-6 mt-6">
+                <GraduationCap className="h-5 w-5 text-primary" aria-hidden="true" />
+                <h3 className="font-display text-2xl font-semibold text-ink">
+                  Education
+                </h3>
+              </div>
+
+              <div className="space-y-4">
+                {aboutData.education.map((edu, i) => (
+                  <motion.div
+                    key={edu.id}
+                    initial={{ opacity: 0, x: -12 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: i * 0.08 }}
+                    className="relative rounded-lg border border-line bg-surface p-6 pl-8 sm:p-7 sm:pl-10"
+                  >
+                    {/* Timeline accent bar */}
+                    <div
+                      aria-hidden="true"
+                      className="absolute left-0 top-0 h-full w-1 rounded-l-lg bg-gradient-to-b from-primary to-secondary"
+                    />
+
+                    <p className="font-mono text-xs uppercase tracking-wide text-secondary">
+                      {edu.period}
+                    </p>
+                    <h4 className="mt-2 font-display text-base font-semibold text-ink sm:text-lg">
+                      {edu.institution}
+                    </h4>
+                    <p className="mt-1 text-sm text-ink-muted">{edu.degree}</p>
+                    <p className="mt-3 text-sm leading-relaxed text-ink-muted">
+                      {edu.description}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
-
-        {/* Education */}
-        <motion.div
-          {...fadeUp}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="mt-16"
-        >
-          <div className="flex items-center gap-3 mb-6">
-            <GraduationCap className="h-5 w-5 text-primary" aria-hidden="true" />
-            <h3 className="font-display text-2xl font-semibold text-ink">
-              Education
-            </h3>
-          </div>
-
-          <div className="space-y-4">
-            {aboutData.education.map((edu, i) => (
-              <motion.div
-                key={edu.id}
-                initial={{ opacity: 0, x: -12 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="relative rounded-lg border border-line bg-surface p-6 pl-8 sm:p-7 sm:pl-10"
-              >
-                {/* Timeline accent bar */}
-                <div
-                  aria-hidden="true"
-                  className="absolute left-0 top-0 h-full w-1 rounded-l-lg bg-gradient-to-b from-primary to-secondary"
-                />
-
-                <p className="font-mono text-xs uppercase tracking-wide text-secondary">
-                  {edu.period}
-                </p>
-                <h4 className="mt-2 font-display text-base font-semibold text-ink sm:text-lg">
-                  {edu.institution}
-                </h4>
-                <p className="mt-1 text-sm text-ink-muted">{edu.degree}</p>
-                <p className="mt-3 text-sm leading-relaxed text-ink-muted">
-                  {edu.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-
       </div>
     </section>
   );

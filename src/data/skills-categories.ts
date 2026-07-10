@@ -6,11 +6,11 @@ export const skillCategories: SkillCategory[] = [
     title: "Languages",
     icon: "code-2",
     items: [
+      { name: "HTML/CSS", level: 4 },
       { name: "JavaScript", level: 3 },
       { name: "TypeScript", level: 3 },
       { name: "Dart", level: 3 },
       { name: "Go", level: 2 },
-      { name: "HTML/CSS", level: 4 },
     ],
   },
   {
@@ -21,8 +21,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Next.js", level: 3 },
       { name: "Flutter", level: 3 },
       { name: "React", level: 3 },
-      { name: "Node.js", level: 2 },
       { name: "Firebase", level: 3 },
+      { name: "Node.js", level: 2 },
     ],
   },
   {
@@ -34,8 +34,8 @@ export const skillCategories: SkillCategory[] = [
       { name: "Wireshark", level: 3 },
       { name: "Burp Suite", level: 3 },
       { name: "Metasploit", level: 3 },
-      { name: "Ghidra", level: 2 },
       { name: "Docker", level: 3 },
+      { name: "Ghidra", level: 2 },
     ],
   },
 ];
