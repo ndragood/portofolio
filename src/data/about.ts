@@ -28,7 +28,7 @@ export const aboutData = {
       id: "edu-1",
       institution: "President University",
       degree: "Bachelor of Computer Science — Cyber Security Concentration",
-      period: "2023 — Present",
+      period: "2024 — Present",
       description:
         "Focusing on network security, ethical hacking, and software development.",
     },
